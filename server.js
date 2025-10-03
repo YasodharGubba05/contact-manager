@@ -8,8 +8,6 @@ app.listen(port,()=>{
     console.log(`sever running on ${port}`);
 })
 
-app.get('/api/contacts',(req,res)=>{
-    res.send("Get all contacts")
-})
+app.use("/api/contacts",require("./routes/contactRoutes"))
 
 
