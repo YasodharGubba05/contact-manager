@@ -9,5 +9,5 @@ app.listen(port,()=>{
 })
 
 app.use("/api/contacts",require("./routes/contactRoutes"))
-
+app.use(express.json());
 
